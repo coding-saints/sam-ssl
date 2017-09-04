@@ -1,0 +1,19 @@
+#results-sidebar {
+    display:flex;
+    flex-direction: column; 
+    flex-basis: 300px; 
+    
+    .property {
+
+        
+    }
+    .property-name {
+        flex-basis: auto;
+    }
+    .property-price {
+        
+    }
+    .property-address {
+        
+    }
+}

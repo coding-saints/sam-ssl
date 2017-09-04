@@ -1,0 +1,43 @@
+.listing {
+    
+    width:33%;
+    
+    .listing-image-box {
+        position:relative;
+        margin:0 5px;
+        
+        .listing-image {
+            width:100%;
+            height:auto;
+            overflow:hidden;
+            
+            img {
+                width:100%;
+            }
+        }
+        .listing-price {
+            position:absolute;
+            padding: 5px 15px;
+            right:0;
+            bottom:0;
+            background:lightgrey;
+            opacicy:0.9;
+            font: {
+                weight:bold;
+                size:0.8rem;
+            };
+        }
+        .listing-info-box {
+            
+            .listing-address {
+                
+            }
+            .listing-summary {
+                
+            }
+            .listing-meta {
+                
+            }
+        }
+    }
+}

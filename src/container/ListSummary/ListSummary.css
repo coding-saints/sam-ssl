@@ -1,0 +1,22 @@
+.listing {
+  width: 33%; }
+  .listing .listing-image-box {
+    position: relative;
+    margin: 0 5px; }
+    .listing .listing-image-box .listing-image {
+      width: 100%;
+      height: auto;
+      overflow: hidden; }
+      .listing .listing-image-box .listing-image img {
+        width: 100%; }
+    .listing .listing-image-box .listing-price {
+      position: absolute;
+      padding: 5px 15px;
+      right: 0;
+      bottom: 0;
+      background: lightgrey;
+      opacicy: 0.9;
+      font-weight: bold;
+      font-size: 0.8rem; }
+
+/*# sourceMappingURL=ListSummary.css.map */

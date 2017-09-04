@@ -1,21 +1,26 @@
 .header-wrapper {
     display: flex;
     justify-content: space-between;
+    
+    position:relative;
 
-    height: 200px;
-    background: #000080;
-    font: {
-        size: 50px;
-    }
+    height: 50px;
+    background: #040529;
+    z-index:3;
+    
     .logo-image {
         min-width: 300px;
-        margin: 25px;
-        color: white;
-       
+        padding: 0 20px;
+        color: grey;
+        line-height:50px;
     }
 
     .phone {
         color:white;
-        margin: auto 0px auto 0px;
+        line-height:50px;
+        font {
+            size: 1.5rem;
+        }
+        padding:0 20px;
     }
 }

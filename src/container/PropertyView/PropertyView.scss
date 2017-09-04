@@ -1,0 +1,29 @@
+.propertyview {
+  display:flex;
+}
+
+.fade-appear .propertyview {
+    opacity:0;
+}
+
+.fade-appear.fade-appear-active .propertyview {
+  opacity: 1;
+  transition: opacity 5000ms ease-in;
+}
+
+.fade-enter .propertyview {
+  opacity: 0;
+  z-index: 1;
+}
+
+
+.fade-exit .propertyview {
+    opacity: 1;
+    transform: translate(0,0);
+}
+
+.fade-exit.fade-exit-active .propertyview {
+  opacity: 0;
+  transform: translate(100, 0);
+  transition: opacity 1000ms ease-in, transform 1000ms ease-in-out;
+}

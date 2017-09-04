@@ -1,0 +1,33 @@
+#property-detail {
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    
+    .property-detail-name {
+        font: {
+            size: 4.0rem;
+            weight: bold;
+        };
+        
+        color: brown;
+    }
+    
+    .property-detail-address {
+        
+    }
+    
+    .property-detail-gallery {
+        display: flex;
+        
+        .col {
+            flex-basis: 33%;    
+        
+            .image {
+                flex-direction:row;
+            }
+            
+        }
+
+    }
+    
+}

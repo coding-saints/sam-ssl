@@ -1,5 +1,105 @@
+html,body, #root {
+    height:100%;
+    display:block;
+    font-size: 100%;
+}
+
+.app-wrapper {
+    height:100%;
+}
+
 .main-wrapper {
-    font: {
-        size: 30px;
+    position:relative;
+    width:100%;
+    height:100%;
+    margin-top:-100px;
+    background: url('/assets/apartment-hero.jpg') no-repeat center center/cover;
+    
+    #overlay {
+        position:absolute;
+        left:0;
+        right:0;
+        top:0;
+        bottom:0;
+        background:black;
+        opacity:0.5;
+        z-index:1;
     }
+    
+    #intro {
+        position:absolute;
+        top:50%;
+        margin-top:-75px;
+        width:100%;
+        z-index:2;
+        
+        h1 {
+            font: {
+                size:5.0rem;
+                weight:bold;
+            };
+            margin:0 auto;
+            text-align:center;
+            color:white;
+        }   
+        
+        h6 {
+            font: {
+                size:3.0rem;
+            };
+            color:white;
+            text-align:center;
+            margin:0 auto;
+        }
+        
+        #search {
+            text-align:center;
+            select {
+                border:none;
+                -webkit-appearance: none;  /*Removes default chrome and safari style*/
+                -moz-appearance: none;  /*Removes default style Firefox*/
+                background: url('https://upload.wikimedia.org/wikipedia/en/f/f1/Down_Arrow_Icon.png') no-repeat right center/ 5% 50% grey;
+                height:50px;
+                color:white;
+                padding:5px;
+                width:33%;
+                line-height:2.0rem;
+                
+                font:{
+                    size:2.0rem;
+                };
+
+            }
+        }
+    }
+
+}
+
+.fade-appear .main-wrapper {
+    opacity:0;
+}
+
+.fade-appear-active .main-wrapper {
+  opacity: 1;
+  transition: opacity 400ms ease-in;
+}
+
+.fade-enter .main-wrapper{
+  opacity: 0;
+  z-index: 1;
+}
+
+.fade-enter.fade-enter-active .main-wrapper {
+    opacity: 1;
+    transition: opacity 1000ms ease-in;
+}
+
+.fade-exit.fade-exit-active .main-wrapper {
+    transform: translate(0,-1000px);
+    transition: transform 200ms linear;
+}
+
+#dropdown-text {
+    width: 250px;
+    margin-left: 100px;
 }

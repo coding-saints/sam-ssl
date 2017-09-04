@@ -1,0 +1,8 @@
+#results-sidebar {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 300px; }
+  #results-sidebar .property-name {
+    flex-basis: auto; }
+
+/*# sourceMappingURL=PropertyResultsSideBar.css.map */

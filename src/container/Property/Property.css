@@ -1,0 +1,16 @@
+#property-detail {
+  width: 100%;
+  display: flex;
+  flex-direction: column; }
+  #property-detail .property-detail-name {
+    font-size: 4.0rem;
+    font-weight: bold;
+    color: brown; }
+  #property-detail .property-detail-gallery {
+    display: flex; }
+    #property-detail .property-detail-gallery .col {
+      flex-basis: 33%; }
+      #property-detail .property-detail-gallery .col .image {
+        flex-direction: row; }
+
+/*# sourceMappingURL=Property.css.map */

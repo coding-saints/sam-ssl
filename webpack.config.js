@@ -65,10 +65,10 @@ module.exports = {
             loader: "file-loader",
             options: {
               // path where the images will be saved
-              name: "assets/[name].[ext]"
+              name: "assets/[name].[ext]",
             }
           },
-
+/*
           {
             loader: "image-webpack-loader",
             options: {
@@ -99,6 +99,7 @@ module.exports = {
               }
             }
           }
+          */
         ]
       }
     ]

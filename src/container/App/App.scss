@@ -1,4 +1,12 @@
+#page-container {
+    height:100%;
+}
+
+#page-container > div {
+    height:inherit;
+}
+
 .app-wrapper {
     min-width: 100%;
-    min-height: 100%
+    min-height: 100%;
 }
