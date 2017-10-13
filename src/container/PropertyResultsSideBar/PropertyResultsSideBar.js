@@ -1,42 +1,27 @@
 import React, {Component} from 'react'
+import ListSummary from '../ListSummary/ListSummary'
 import './PropertyResultsSideBar.scss'
+
 export default class PropertyResultsSideBar extends Component {
     constructor(props) {
         super(props);
         
         this.state = {
-            
+            listings: undefined
         }
     }
+    
     
     render() {
         return(
             <div id="results-sidebar">
-                
-                <div className="property">
-                    <div className="property-name">My House</div>
-                    <div className="property-price">$1,000,000</div>
-                    <div className="property-address">123 Dumpster Ave SideofStreet, NJ</div>
-                </div>
-                
-                <div className="property">
-                    <div className="property-name">My House</div>
-                    <div className="property-price">$1,000,000</div>
-                    <div className="property-address">123 Dumpster Ave SideofStreet, NJ</div>
-                </div>
-                
-                <div className="property">
-                    <div className="property-name">My House</div>
-                    <div className="property-price">$1,000,000</div>
-                    <div className="property-address">123 Dumpster Ave SideofStreet, NJ</div>
-                </div>
-                
-                <div className="property">
-                    <div className="property-name">My House</div>
-                    <div className="property-price">$1,000,000</div>
-                    <div className="property-address">123 Dumpster Ave SideofStreet, NJ</div>
-                </div>
-                
+               { this.props.listings.map( (listing, index) => (<ListSummary key={index}
+                                name={listing.name} 
+                                address={listing.address}
+                                onClick={() => this.props.doit(true)}
+                                price={listing.price} />)
+                )
+               }
             </div>
             )
     }

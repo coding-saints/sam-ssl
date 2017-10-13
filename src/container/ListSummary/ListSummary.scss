@@ -1,4 +1,4 @@
-.listing {
+#listing-container .listing {
     
     width:33%;
     
@@ -40,4 +40,21 @@
             }
         }
     }
+}
+
+#results-sidebar .listing {
+
+    margin:5px 0;
+    padding:5px;
+    
+    .listing-price {
+        font: {
+            weight: bold;
+        };
+    }
+    
+    &:nth-of-type(even) {
+        background:lightgrey;
+    }
+    
 }

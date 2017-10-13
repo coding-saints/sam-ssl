@@ -1,7 +1,51 @@
 .footer-wrapper {
-    height: 50px;
+    min-width: 100%;
+    color: white;
+    
     font: {
         size: 25px;
     }
-    background: #040529;
+    background: #1E213F;
+    
+    .footer-logo {
+        width: 250px;
+   
+        text-align:center;
+        border: 2px solid red;
+        border-radius: 50%;
+    }
+    .address {
+        
+             padding-left: 20px;
+        font: {
+            size: .7em;
+            
+        };
+    }
+         div.social {
+             .social-icons {
+               display: flex;
+               justify-content: space-around;
+         
+            }
+            .icon {
+                
+
+                    text-decoration: none;
+                    list-style: none;
+            }
+     
+        }
+    .copyright {
+        background:#0f1121;
+        padding:20px;
+        width: 100%;
+        text-align: center;
+        vertical-align: bottom;
+        font: {
+            size: .5em;
+            family: 'Lato'
+        }
+        
+    }
 }

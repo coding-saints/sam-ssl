@@ -3,8 +3,9 @@
   justify-content: space-between;
   position: relative;
   height: 50px;
-  background: #040529;
-  z-index: 3; }
+  background: #1E213F;
+  z-index: 3;
+  font-family: 'Lato'; }
   .header-wrapper .logo-image {
     min-width: 300px;
     padding: 0 20px;

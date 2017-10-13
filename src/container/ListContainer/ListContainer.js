@@ -1,16 +1,18 @@
 import React, {Component} from 'react'
 
-import ListSummary from '../ListSummary/ListSummary.js'
+import ListSummary from '../ListSummary/ListSummary'
 import './ListContainer.scss'
 
 export default class ListContainer extends Component {
     constructor(props,state) {
         super(props,state);
+        state = {
+            render: ''
+        }
+     
     }
     
-    componentDidMount() {
-        
-    }
+
 
     render() {
         return (

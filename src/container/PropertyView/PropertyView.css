@@ -1,5 +1,6 @@
 .propertyview {
-  display: flex; }
+  display: flex;
+  min-height: 100vh; }
 
 .fade-appear .propertyview {
   opacity: 0; }

@@ -1,11 +1,13 @@
 import React, { Component } from "react";
-import Listings from '../ListContainer/listings.js'
+import {Listings} from '../ListContainer/listings.js'
 import Main from "../Main/Main"
 import ListContainer from '../ListContainer/ListContainer'
 import Header from '../Header/Header'
 import Footer from '../Footer/Footer'
 import {CSSTransition, TransitionGroup}  from 'react-transition-group'
 import TransitionState from '../TransitionState/TransitionState'
+import ApplicationContainer from '../ApplicationContainer/ApplicationContainer'
+
 
 export default class HomeView extends Component {
 
@@ -41,6 +43,8 @@ export default class HomeView extends Component {
                     <Header />
                     <Main {...this.props} doit={this.getListings} />
                     <ListContainer {...this.props} listings={this.state.listings} />
+                   { /* <ApplicationContainer/> */ }
+                  
                     <Footer />
                 </div>
                 )

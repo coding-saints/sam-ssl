@@ -27,6 +27,7 @@ html,body, #root {
     }
     
     #intro {
+        font-family: 'Lato';
         position:absolute;
         top:50%;
         margin-top:-75px;
@@ -55,22 +56,31 @@ html,body, #root {
         #search {
             text-align:center;
             select {
+                display: inline;
                 border:none;
                 -webkit-appearance: none;  /*Removes default chrome and safari style*/
                 -moz-appearance: none;  /*Removes default style Firefox*/
                 background: url('https://upload.wikimedia.org/wikipedia/en/f/f1/Down_Arrow_Icon.png') no-repeat right center/ 5% 50% grey;
                 height:50px;
                 color:white;
-                padding:5px;
+                margin: 15px;
+                padding:2px;
                 width:33%;
                 line-height:2.0rem;
-                
+                background: #10B2BF;
                 font:{
+                    
                     size:2.0rem;
                 };
 
             }
         }
+        
+        
+.search-beds option {
+    width: 200px;
+    display: flex;
+}
     }
 
 }

@@ -11,7 +11,7 @@ export default class ListSummary extends Component {
     
     render() {
         return(
-            <div className="listing">
+            <div onClick={this.props.onClick} className="listing">
                 <div className="listing-image-box">
                    <Link to="/1"> 
                        <div className="listing-image">
