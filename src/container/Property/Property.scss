@@ -1,7 +1,8 @@
 #property-detail {
-    width: 100%;
+    width: 900px;
     display:flex;
     flex-direction: column;
+    padding:20px 0 0 50px;
 
     .property-detail-name {
         font: {
@@ -13,7 +14,23 @@
     }
     
     .property-detail-address {
-        
+        font: {
+            size: 2.0rem;
+            weight:bold;
+            family: 'Lato'
+        };
+    }
+    
+    .property-detail-meta-summary {
+        font: {
+            size: 1.3rem;
+            weight:bold;
+            family: 'Lato'
+        };
+    }
+    
+    .property-detail-summary {
+        margin-top:15px; 
     }
     
     .property-detail-gallery {
@@ -27,7 +44,6 @@
             }
             
         }
-
     }
     
 }

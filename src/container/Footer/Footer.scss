@@ -1,43 +1,84 @@
 .footer-wrapper {
+    background: #1E213F;
     min-width: 100%;
     color: white;
     
     font: {
         size: 25px;
     }
-    background: #1E213F;
+    
+    .footer-container {
+        width:1000px;
+        margin:0 auto;
+        padding: 50px 0;
+    }
     
     .footer-logo {
-        width: 250px;
-   
-        text-align:center;
-        border: 2px solid red;
-        border-radius: 50%;
+        width: 33%;
+        height:100px;
+    	float: left;
+    	border-collapse:collapse;
+    	background: url('../../public/assets/ssl-logo.png') center center/contain no-repeat;
     }
-    .address {
-        
-             padding-left: 20px;
-        font: {
-            size: .7em;
+    
+    .git {
+        width: 33%;
+    	float: left;
+    	border-collapse:collapse;
+    	
+       
             
-        };
-    }
-         div.social {
-             .social-icons {
-               display: flex;
-               justify-content: space-around;
-         
+        .get-in-touch {
+            list-style:none;
+            font: {
+                size: 0.8rem;
+            };
+            
+            li {
+                margin-bottom: 15px;
             }
-            .icon {
-                
-
-                    text-decoration: none;
-                    list-style: none;
+            
+            span {
+                font: {
+                    size: 1.0rem;
+                    weight: bold;
+                };
+                i {
+                    margin-left: -10px;
+                    margin-right: 10px;
+                }
             }
-     
+            
+            div {
+                padding-left:10px;
+                color: lightgrey;
+            }
         }
+    }
+ 
+    
+    div.social {
+        width: 33%;
+    	float: left;
+    	border-collapse:collapse;
+    	
+        .social-icons {
+            display: flex;
+            justify-content: space-around;
+            width: 33%;
+        	padding: 5px 15px;
+        	float: left;
+        }
+        .icon {
+            margin: 10px;
+            text-decoration: none;
+            list-style: none;
+        }
+    }
+    
     .copyright {
         background:#0f1121;
+        clear:both;
         padding:20px;
         width: 100%;
         text-align: center;
@@ -48,4 +89,5 @@
         }
         
     }
+    
 }

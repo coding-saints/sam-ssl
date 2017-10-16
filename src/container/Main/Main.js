@@ -31,15 +31,15 @@ export default class Main extends Component {
                             <h1>SSL PROPERTIES</h1>
                             <div id="search">
                                 <select id="search-text" onChange={ () => this.props.doit(true) }>
-                                {
-                                this.state.locations.map(
-                                    (location, index) => (
-                                        <option key={index}>{location}</option>
-                                      
+                                    <option>Choose A Location</option>
+                                    {
+                                    this.state.locations.map(
+                                        (location, index) => (
+                                            <option key={index}>{location}</option>
+                                          
+                                        )
                                     )
-                                )
-                                }
-                               
+                                    }
                                 </select>
                                  <div className="beds">
                           <select className="search-beds">

@@ -15,20 +15,13 @@ export default class Property extends Component {
    
     render() {
         console.log(this.props.property);
-  if(this.props.property === undefined)
-          return null
+        
+        if(this.props.property === undefined)
+            return null
   
         return(
             <div id="property-detail">
-    
-                {this.props.property[0].name}
-                <img src={this.props.property[0].image} width="250" />
-            
-            
-            
-                {/*<div className="property-detail-name">{this.state.property.name}</div>
-                <div className="property-detail-address">{this.state.property.address}</div>
-                                
+
                 <div className="property-detail-gallery">
                     <div className="col">
                         <div className="image">
@@ -51,7 +44,20 @@ export default class Property extends Component {
                             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Gelbensande3.jpg/1200px-Gelbensande3.jpg" width="100%"/>
                         </div>
                     </div>
-                </div>*/}
+                </div>
+                
+                    
+                <div className="property-detail-address">{this.props.property[0].address}</div>
+                <div className="property-detail-meta-summary">
+                    {this.props.property[0].meta.beds} beds &bull; {this.props.property[0].meta.baths} baths &bull; {this.props.property[0].meta.sqft.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")} sqft
+                </div>
+                
+                <div className="property-detail-summary">{this.props.property[0].summary}</div>
+                
+                <div className="property-detail-meta">
+                    <h3>Facts and Features</h3>
+                    
+                </div>
             
             </div>
             )

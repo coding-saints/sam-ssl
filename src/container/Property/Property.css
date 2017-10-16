@@ -1,11 +1,22 @@
 #property-detail {
-  width: 100%;
+  width: 900px;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  padding: 20px 0 0 50px; }
   #property-detail .property-detail-name {
     font-size: 4.0rem;
     font-weight: bold;
     color: brown; }
+  #property-detail .property-detail-address {
+    font-size: 2.0rem;
+    font-weight: bold;
+    font-family: "Lato"; }
+  #property-detail .property-detail-meta-summary {
+    font-size: 1.3rem;
+    font-weight: bold;
+    font-family: "Lato"; }
+  #property-detail .property-detail-summary {
+    margin-top: 15px; }
   #property-detail .property-detail-gallery {
     display: flex; }
     #property-detail .property-detail-gallery .col {

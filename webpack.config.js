@@ -18,12 +18,11 @@ module.exports = {
     path: PATHS.dist,
     filename: "[name].js"
   },
-  // devServer: {
-  //     open: true,
-  //     compress: true,
-  //     historyApiFallback: true
-
-  // },
+   devServer: {
+       open: true,
+       compress: true,
+       historyApiFallback: true
+   },
   module: {
     rules: [
       {
